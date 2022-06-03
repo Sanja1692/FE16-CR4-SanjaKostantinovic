@@ -5,8 +5,7 @@ const taskCards = document.getElementById("allcards");
 printData = () => {
     taskCards.innerHTML = "";
     taskList.forEach((task) => {
-        taskCards.innerHTML += `    <div class="container mt-3" id="allcards">
-                <div class="card col-lg-3 col-md-5 col-sm-10 cardmod shadow-lg mt-0 mb-5" style="width: 18rem;">
+        taskCards.innerHTML += `<div class="card col-lg-3 col-md-5 col-sm-10 cardmod shadow-lg mt-0 mb-5 ms-2 me-2">
                 <div class="justify-content-between d-flex pt-3 pb-3">
         <div class="leftside ps-2">
             <a href="#" class="btn btn-info pt-1 pb-1 text-white">Task</a>
@@ -33,9 +32,8 @@ printData = () => {
             <p class="btn btn-danger"><img src="pics/trash.png" alt="" width="20" height="20">Delete</p>
             <p class="btn btn-success"><img src="pics/check.png" alt="" width="20" height="20">Done</p>
         </div>
-          </div></div>
-
-        </div>`
+          </div>
+`
     });
 };
 printData();

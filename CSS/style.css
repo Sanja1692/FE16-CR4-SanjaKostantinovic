@@ -95,41 +95,11 @@ html {
 }
 
 
-/* .hover {
-    color: white;
-    transition: all 0.8s linear;
-}
-
-.hover:hover {
-    padding: 1em;
-    font-size: x-large;
-    color: cyan;
-} */
-
-
-/* .hov {
-    transition: all 0.8s linear;
-}
-
-.hov:hover {
-    padding: 1em;
-    font-size: larger;
-    color: cyan;
-} */
-
+/* 
 .none {
     text-decoration: none;
-}
+} */
 
 .test {
     justify-content: center;
 }
-
-
-/* @media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-      }
-} */
