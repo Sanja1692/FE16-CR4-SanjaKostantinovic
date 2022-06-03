@@ -1,20 +1,20 @@
 let tasks = `[
 {    "taskName": "Buy groceries",
     "image": "https://images.pexels.com/photos/4020557/pexels-photo-4020557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    "description": "Sat. - family dinner",
+    "description": "Sat. - family dinner + weekly supplies",
     "dueTime": "Friday, 17:00",
     "importance": 0
 }, {
     "taskName": "Family Dinner",
     "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "description": "Call Mom and Dad",
+    "description": "Call Mom",
     "dueTime": "Saturday, 18:00",
     "importance": 0
 }, {
     "taskName": "Go to park",
     "image": "https://cdn.pixabay.com/photo/2016/02/09/02/07/swing-1188132_960_720.jpg",
     "description": "3 times a day",
-    "dueTime": "Mo-Sa. till 19:00",
+    "dueTime": "Mo-Su. till 19:00",
     "importance": 0
 }, {
     "taskName": "Lainzer Tiergarten",
