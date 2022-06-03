@@ -1,0 +1,55 @@
+let tasks = `[{
+    "taskName": "Buy groceries",
+    "image": "https://images.pexels.com/photos/4020557/pexels-photo-4020557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "description": "Sat. - family dinner",
+    "dueTime": "Friday, 17:00",
+    "importance": 0
+}, {
+    "taskName": "Family Dinner",
+    "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    "description": "Call Mom and Dad",
+    "dueTime": "Saturday, 18:00",
+    "importance": 0
+}, {
+    "taskName": "Go to park",
+    "image": "https://cdn.pixabay.com/photo/2016/02/09/02/07/swing-1188132_960_720.jpg",
+    "description": "3 times a day",
+    "dueTime": "Mo-Sa. till 19:00",
+    "importance": 0
+}, {
+    "taskName": "Lainzer Tiergarten",
+    "image": "https://cdn.pixabay.com/photo/2018/08/13/03/21/family-3602245_960_720.jpg",
+    "description": "Take a walk with husbund and kid",
+    "dueTime": "Sun. 9:00",
+    "importance": 0
+}, {
+    "taskName": "Reading books",
+    "image": "https://images.pexels.com/photos/904616/pexels-photo-904616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "description": "1 book/week - find new pdf-books in internet",
+    "dueTime": "-",
+    "importance": 0
+}, {
+    "taskName": "Go to birthday",
+    "image": "https://cdn.pixabay.com/photo/2015/06/17/14/01/girl-812482_960_720.jpg",
+    "description": "Buy a present for two year old girl",
+    "dueTime": "Th. 16:00",
+    "importance": 0
+}, {
+    "taskName": "Book a vacation",
+    "image": "https://cdn.pixabay.com/photo/2016/11/08/05/08/adult-1807500_960_720.jpg",
+    "description": "Try new places",
+    "dueTime": "Mon., 13:00",
+    "importance": 0
+}, {
+    "taskName": "Cooking",
+    "image": "https://cdn.pixabay.com/photo/2016/06/06/18/29/meat-skewer-1440105_960_720.jpg",
+    "description": "Every day different",
+    "dueTime": "Mon.-Fri, 11:00",
+    "importance": 0
+}, {
+    "taskName": "Help Mom",
+    "image": "https://images.pexels.com/photos/3791666/pexels-photo-3791666.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "description": "Go to Ikea",
+    "dueTime": "Wed., 17:00",
+    "importance": 0
+}]`;
