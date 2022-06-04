@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
@@ -65,7 +64,8 @@
 
     <main>
         <!-- headline beginning -->
-        <div class="container headline d-flex justify-content-between pt-5 pb-5 ps-5">
+        <div class="container headline d-flex justify-content-between pt-5
+                pb-5 ps-5">
             <div class="leftside">
                 <h3>Weekly Tasks</h3>
             </div>
@@ -79,14 +79,53 @@
         </div>
     </main>
     <div class="container">
-        <div class="container row test m-auto m-5" id="allcards"></div>
+        <div class="container row test m-auto m-5" id="allcards">
+            <div class="card col-lg-3 col-md-5 col-sm-10 cardmod shadow-lg
+                    mt-0 mb-5 ms-2 me-2">
+                <div class="justify-content-between d-flex pt-3 pb-3">
+                    <div class="leftside ps-2">
+                        <a href="#" class="btn btn-info pt-1 pb-1
+                                text-white">Task</a>
+                    </div>
+                    <div class="rightside">
+                        <img src="pics/bookmark.png" alt="" width="20" height="16">
+                        <img src="pics/dot.png" alt="" width="20" height="16">
+                    </div>
+                </div>
+                <img src="${task.image}" class="card-img-top p-2" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-center"></h5>
+                    <p class="card-text text-center"></p>
+                </div>
+                <div class="d-flex border-top pt-3">
+                    <p class="m-0 ms-2 align-self-center">
+                        <p class="m-0
+                                align-self-center"><img src="pics/important.png" class="importantbutton" alt="" width="20" height="20"> Priority level: </p>
+                        <p class="p-1 rounded m-0 importance" id="test3"></p>
+                        <div class="btn btn-success imp-btn">
+                            <span class="imp-count">0</span>
+                        </div>
+
+                    </p>
+                </div>
+                <div class="border-bottom pt-2 ms-2">
+                    <p><img src="pics/calender.png" alt="" width="20" height="20"> Deadline:</p>
+                </div>
+                <div class="text-end pt-3 pe-2">
+                    <p class="btn btn-danger"><img src="pics/trash.png" alt="" width="20" height="20">Delete</p>
+                    <p class="btn btn-success"><img src="pics/check.png" alt="" width="20" height="20">Done</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 
 
 
     <footer>
-        <div class="bg-dark text-light  pt-2 pb-1 text-center align-self-center footersection">
+        <div class="bg-dark text-light pt-2 pb-1 text-center
+                align-self-center footersection">
             <!-- icons -->
             <p class="pt-3 pb-3 m-0">
                 <a href="https://www.facebook.com"><img src="pics/facebook.png" alt="facebook" class="imagefooter"></a>
@@ -97,11 +136,13 @@
                 <a href="https://www.github.com"><img src="pics/github.png" alt="github" class="imagefooter"></a>
             </p>
             <form class="d-flex justify-content-center pb-5">
-                <label for="email" class="align-self-center m-0">Sign up for our newsletter</label>
+                <label for="email" class="align-self-center m-0">Sign up for
+                        our newsletter</label>
                 <input type="text" id="email" class="search" placeholder="Email address">
                 <div class="col-auto">
                     <!-- Submit button -->
-                    <button type="submit" class="btn btn-outline-light mb-1">Subscribe</button>
+                    <button type="submit" class="btn btn-outline-light
+                            mb-1">Subscribe</button>
                 </div>
             </form>
             <p class="m-0 pb-2">&copy; Copyright 2022 Sanja Kostantinovic</p>
