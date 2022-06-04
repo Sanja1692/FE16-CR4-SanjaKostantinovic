@@ -54,17 +54,35 @@ const increaseImportance = () => {
 
 
 const validateBtn = (e) => {
-    console.log(e.target.value);
-    if (e.target.value < 1) {
-        e.target.style.backgroundcolor = "green";
-    } else if (e.target.value < 3) {
-        e.target.style.backgroundcolor = "yellow";
-    } else {
-        e.target.style.backgroundcolor = "red";
+        console.log(e.target.change);
+        if (e.target.change < 1) {
+            e.target.style.backgroundcolor = "green";
+        } else if (e.target.change < 3) {
+            e.target.style.backgroundcolor = "yellow";
+        } else {
+            e.target.style.backgroundcolor = "red";
 
+        }
     }
+    // document.getElementById("sortUp").addEventListener("click", function() {
+    //     taskList.sort((a, b) => b.importance - a.importance);
+    //     document.getElementById("allcards").innerHTML = "";
+    // })
+    // document.getElementById("sortDown").addEventListener("click", function() {
+    //     taskList.sort((a, b) => a.importance - b.importance);
+    //     document.getElementById("allcards").innerHTML = "";
+    // })
+
+function sortTasks() {
+    data.sort(function(firstNumber, secondNumber) {
+        return secondNumber.importance - firstNumber.importance;
+    })
 }
+
+document.getElementById("sortUp").addEventListener("click", function() {
+    sortTasks();
+});
 
 printData();
 increaseImportance();
-impBtn.addEventListener("input", validateBtn);
+impBtn.addEventListener("change", validateBtn);
