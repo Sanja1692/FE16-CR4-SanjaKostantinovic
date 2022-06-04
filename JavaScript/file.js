@@ -51,5 +51,20 @@ const increaseImportance = () => {
         });
     });
 };
+
+
+const validateBtn = (e) => {
+    console.log(e.target.value);
+    if (e.target.value < 1) {
+        e.target.style.backgroundcolor = "green";
+    } else if (e.target.value < 3) {
+        e.target.style.backgroundcolor = "yellow";
+    } else {
+        e.target.style.backgroundcolor = "red";
+
+    }
+}
+
 printData();
 increaseImportance();
+impBtn.addEventListener("input", validateBtn);
