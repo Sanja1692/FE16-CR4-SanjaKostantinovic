@@ -23,7 +23,8 @@ printData = () => {
                 <div class="d-flex border-top pt-3">
         <p class="m-0 ms-2 align-self-center"><p class="m-0 align-self-center"><img src="pics/important.png" class="importantbutton" alt="" width="20" height="20"> Priority level: </p>
             <p class="p-1 rounded m-0 importance" id="test3">${task.importance}</p>
-            <div class="btn btn-success imp-btn"><span class="imp-count">0</span>
+            <div>                            
+            <button class="imp-btn"><span class="imp-count">0</span></button>
             </div>
 
         </p>
