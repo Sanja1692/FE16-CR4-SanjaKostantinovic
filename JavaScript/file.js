@@ -44,9 +44,9 @@ const increaseImportance = () => {
     const impBtn = document.querySelectorAll(".imp-btn");
     impBtn.forEach((btn, i) => {
         btn.addEventListener("click", () => {
-            const importan = taskList[i].importance++;
+            taskList[i].importance++;
             btn.querySelector(".imp-count").innerHTML =
-                importan;
+                taskList[i].importance++;
             console.log(taskList[i]);
         });
     });
@@ -54,10 +54,10 @@ const increaseImportance = () => {
 
 
 const validateBtn = (e) => {
-        console.log(e.target.change);
-        if (e.target.change < 1) {
+        console.log(e.target.value);
+        if (e.target.value < 1) {
             e.target.style.backgroundcolor = "green";
-        } else if (e.target.change < 3) {
+        } else if (e.target.value < 3) {
             e.target.style.backgroundcolor = "yellow";
         } else {
             e.target.style.backgroundcolor = "red";
@@ -85,4 +85,4 @@ document.getElementById("sortUp").addEventListener("click", function() {
 
 printData();
 increaseImportance();
-impBtn.addEventListener("change", validateBtn);
+impBtn.addEventListener("click", validateBtn);
