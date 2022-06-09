@@ -22,9 +22,8 @@ printData = () => {
                 </div>
                 <div class="d-flex border-top pt-3">
         <p class="m-0 ms-2 align-self-center"><p class="m-0 align-self-center"><img src="pics/important.png" class="importantbutton" alt="" width="20" height="20"> Priority level: </p>
-            <p class="p-1 rounded m-0 importance" id="test3">${task.importance}</p>
             <div>                            
-            <button class="imp-btn"><span class="imp-count">0</span></button>
+            <button class="imp-btn"><span class="imp-count">${task.importance}</span></button>
             </div>
 
         </p>
@@ -39,6 +38,15 @@ printData = () => {
           </div>
 `
     });
+
+    // function sortTasks() { //array call the fun that create cards again tasklist
+    //     data.sort(function(firstNumber, secondNumber) {
+    //         return secondNumber.importance - firstNumber.importance;
+    //     })
+    //     document.getElementById("sortUp").addEventListener("click", function() {
+    //         sortTasks();
+    //     });
+    // }
 };
 const increaseImportance = () => {
     const impBtn = document.querySelectorAll(".imp-btn");
@@ -46,43 +54,36 @@ const increaseImportance = () => {
         btn.addEventListener("click", () => {
             taskList[i].importance++;
             btn.querySelector(".imp-count").innerHTML =
-                taskList[i].importance++;
+                taskList[i].importance;
             console.log(taskList[i]);
+            background = backgroundBtn(taskList[i].importance);
+            btn.style.backgroundColor = backgroundcolor;
         });
     });
 };
 
-
-const validateBtn = (e) => {
-        console.log(e.target.value);
-        if (e.target.value < 1) {
-            e.target.style.backgroundcolor = "green";
-        } else if (e.target.value < 3) {
-            e.target.style.backgroundcolor = "yellow";
-        } else {
-            e.target.style.backgroundcolor = "red";
-
-        }
+function backgroundBtn(importance) {
+    if (importance > 3) {
+        backgroundcolor = "red";
+    } else if (importance > 1) {
+        console.log(importance);
+        backgroundcolor = "yellow";
+    } else {
+        backgroundcolor = "green";
     }
-    // document.getElementById("sortUp").addEventListener("click", function() {
-    //     taskList.sort((a, b) => b.importance - a.importance);
-    //     document.getElementById("allcards").innerHTML = "";
-    // })
-    // document.getElementById("sortDown").addEventListener("click", function() {
-    //     taskList.sort((a, b) => a.importance - b.importance);
-    //     document.getElementById("allcards").innerHTML = "";
-    // })
-
-function sortTasks() {
-    data.sort(function(firstNumber, secondNumber) {
-        return secondNumber.importance - firstNumber.importance;
-    })
+    return backgroundcolor;
 }
+// document.getElementById("sortUp").addEventListener("click", function() {
+//     taskList.sort((a, b) => b.importance - a.importance);
+//     document.getElementById("allcards").innerHTML = "";
+// })
+// document.getElementById("sortDown").addEventListener("click", function() {
+//     taskList.sort((a, b) => a.importance - b.importance);
+//     document.getElementById("allcards").innerHTML = "";
+// })
 
-document.getElementById("sortUp").addEventListener("click", function() {
-    sortTasks();
-});
 
 printData();
 increaseImportance();
-impBtn.addEventListener("click", validateBtn);
+// sortTasks();
+// impBtn.addEventListener("click", validateBtn);

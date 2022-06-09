@@ -89,9 +89,13 @@ html {
 }
 
 .importance {
-    color: white;
+    color: green;
     margin-left: 5px !important;
     padding: 5px 10px !important;
+}
+
+.imp-btn {
+    background-color: green;
 }
 
 
